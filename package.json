@@ -4,47 +4,33 @@
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "Stencil environment Plugin",
-  "devDependencies": {
-    "@types/jest": "^23.3.2",
-    "@types/node": "^8.5.1",
-    "jest": "^23.6.0",
-    "np": "^3.0.4",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.66.2",
-    "tslint": "^5.11.0",
-    "tslint-ionic-rules": "0.0.19",
-    "typescript": "3.0.3"
-  },
+  "description": "Angular hotjar Plugin",
+  "devDependencies": {},
   "files": [
     "dist/"
   ],
-  "homepage": "https://stenciljs.com/",
+  "homepage": "https://angular.io/",
   "jest": {
     "transform": {
       "^.+\\.(js|ts|tsx)$": "<rootDir>/test/jest.preprocessor.js"
     },
     "testRegex": "(\\.(test|spec))\\.(tsx?|jsx?)$",
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
+      "ts"
     ],
     "testURL": "http://localhost"
   },
   "keywords": [
-    "stencil",
-    "environment"
+    "angular",
+    "hotjar"
   ],
   "license": "MIT",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "name": "@nonconforme/stencil-environment",
+  "main": "hotjar.component.ts",
+  "module": "hotjar.module.ts",
+  "name": "@nonconforme/angular-hotjar",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nonconforme/stencil-environment.git"
+    "url": "git+https://github.com/nonconforme/angular-hotjar.git"
   },
   "scripts": {
     "build": "tsc && npm run rollup",
@@ -57,6 +43,5 @@
     "version": "npm run build",
     "watch": "tsc --watch"
   },
-  "types": "dist/index.d.ts",
-  "version": "0.0.6"
+  "version": "0.0.1"
 }
