@@ -1,0 +1,62 @@
+{
+  "author": {
+    "name": "nonconforme"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Stencil environment Plugin",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^8.5.1",
+    "jest": "^23.6.0",
+    "np": "^3.0.4",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.2",
+    "tslint": "^5.11.0",
+    "tslint-ionic-rules": "0.0.19",
+    "typescript": "3.0.3"
+  },
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://stenciljs.com/",
+  "jest": {
+    "transform": {
+      "^.+\\.(js|ts|tsx)$": "<rootDir>/test/jest.preprocessor.js"
+    },
+    "testRegex": "(\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ],
+    "testURL": "http://localhost"
+  },
+  "keywords": [
+    "stencil",
+    "environment"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "name": "@nonconforme/stencil-environment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonconforme/stencil-environment.git"
+  },
+  "scripts": {
+    "build": "tsc && npm run rollup",
+    "lint": "tslint --project tsconfig.json",
+    "prebuild": "rimraf ./dist && npm run test && npm run lint",
+    "release": "np",
+    "rollup": "rollup -c",
+    "test": "jest",
+    "test.watch": "jest --watch",
+    "version": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.6"
+}
