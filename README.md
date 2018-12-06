@@ -10,5 +10,4 @@ npm install @nonconforme/angular-hotjar --save
 
 ### Import component and service
 
-* import HotjarComponent to your "declarations" of file app.module.ts.
-* import HotjarService to your "providers" of file app.module.ts
+* import HotjarModule to your "imports" of file app.module.ts.
