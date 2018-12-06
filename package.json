@@ -25,8 +25,8 @@
     "hotjar"
   ],
   "license": "MIT",
-  "main": "hotjar.component.ts",
-  "module": "hotjar.module.ts",
+  "main": "dist/hotjar.component.ts",
+  "module": "dist/hotjar.module.ts",
   "name": "@nonconforme/angular-hotjar",
   "repository": {
     "type": "git",
@@ -43,5 +43,5 @@
     "version": "npm run build",
     "watch": "tsc --watch"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
